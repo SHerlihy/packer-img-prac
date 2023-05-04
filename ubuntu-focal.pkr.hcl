@@ -58,7 +58,7 @@ Some nice description about the image being published to HCP Packer Registry.
 
   provisioner "shell" {
     inline = [
-      "sudo mv /tmp/index.html /"
+      "sudo mv /tmp/index.html /home/ubuntu/"
     ]
   }
 

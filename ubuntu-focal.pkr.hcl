@@ -50,4 +50,16 @@ Some nice description about the image being published to HCP Packer Registry.
   sources = [
     "source.amazon-ebs.basic-example-west"
   ]
+
+  provisioner "file" {
+    source      = "index.html"
+    destination = "/tmp/index.html"
+  }
+
+  provisioner "shell" {
+    inline = [
+      "mv /temp/index.html /"
+    ]
+  }
+
 }

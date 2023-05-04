@@ -52,13 +52,13 @@ Some nice description about the image being published to HCP Packer Registry.
   ]
 
   provisioner "file" {
-    source      = "index.html"
+    source      = "./index.html"
     destination = "/tmp/"
   }
 
   provisioner "shell" {
     inline = [
-      "mv /temp/index.html /"
+      "sudo mv /tmp/index.html /"
     ]
   }
 

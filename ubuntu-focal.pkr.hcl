@@ -53,7 +53,7 @@ Some nice description about the image being published to HCP Packer Registry.
 
   provisioner "file" {
     source      = "index.html"
-    destination = "/tmp/index.html"
+    destination = "/tmp/"
   }
 
   provisioner "shell" {
